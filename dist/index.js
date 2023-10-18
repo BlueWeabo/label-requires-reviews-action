@@ -86,7 +86,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getCurrentReviewCount = exports.findRepositoryInformation = exports.getMaxReviewNumber = exports.getRulesForLabels = void 0;
 // Get the maximum number of reviews based on the configuration and the issue labels
 const getRulesForLabels = async (issuesListLabelsOnIssueParams, client, rules) => {
-    return client.pull_request
+    return client.issues
         .listLabelsOnIssue(issuesListLabelsOnIssueParams)
         .then(({ data: labels }) => {
         return labels.reduce((acc, label) => acc.concat(label.name), []);
