@@ -11,6 +11,7 @@ inputs:
     required: true
   rules_yaml:
     description: 'Labels for which to add more reviews required for it.'
+    required: true
 branding:
   icon: 'user-check'  
   color: 'green'
