@@ -30,6 +30,7 @@ const args: ToolkitOptions = {
     'pull_request_review.edited',
     'pull_request_review.dismissed',
   ],
+  secrets: ['GH_TOKEN']
 }
 
 Toolkit.run(async (toolkit: Toolkit) => {

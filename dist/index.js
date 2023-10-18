@@ -30,6 +30,7 @@ const args = {
         'pull_request_review.edited',
         'pull_request_review.dismissed',
     ],
+    secrets: ['']
 };
 actions_toolkit_1.Toolkit.run(async (toolkit) => {
     var _a;
@@ -5439,6 +5440,7 @@ var Toolkit = /** @class */ (function () {
         this.outputs = outputs_1.createOutputProxy();
         // Memoize the GitHub API token
         this.token = opts.token || this.inputs.github_token || process.env.GITHUB_TOKEN;
+        args.secrets[0] = this.token;
         // Directly expose some other libraries
         this.exec = exec.exec.bind(this);
         // Setup nested objects
