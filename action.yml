@@ -3,7 +3,7 @@ author: BlueWeabo <ilia.iliev2005@gmail.com> previous - TravelPerk <engineering@
 description: This Github action will require a minimum number of reviews if a label is present.
 runs:
   using: 'node20'
-  main: 'src/main.ts'
+  main: 'dist/index.js'
 
 inputs:
   github_token:
