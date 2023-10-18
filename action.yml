@@ -1,5 +1,5 @@
 name: Label requires reviews - BlueWeabo Fork
-author: BlueWeabo <ilia.iliev2005@gmail.com> previous: TravelPerk <engineering@travelperk.com>
+author: BlueWeabo <ilia.iliev2005@gmail.com> previous - TravelPerk <engineering@travelperk.com>
 description: This Github action will require a minimum number of reviews if a label is present.
 runs:
   using: 'node12'
